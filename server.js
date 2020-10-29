@@ -14,7 +14,7 @@ app.prepare().then(() => {
         const { pathname, query, } = parsedUrl
         const isPc = !/mobile/gi.test(req.headers['user-agent']) && query.mode !== 'mobile';
         const isNext = /^\/_next/.test(pathname);
-        const url = isPc && !isNext ? `/test` : pathname;
+        const url = isPc && !isNext ? `/pc` : pathname;
         if (isPc && !isNext) {
             const temp = `${req.headers['x-forwarded-proto'] || 'http'}://${req.headers.host}${pathname}?mode=mobile&${qs.stringify(query)}`;
             for (const key in query){
