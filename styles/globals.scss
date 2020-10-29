@@ -7,16 +7,38 @@ body {
 }
 
 #__next {
-  overflow: -moz-scrollbars-none;
   overflow-y: auto;
   height: 100%;
   width: 100%;
-  -ms-overflow-style: none;
-  &::-webkit-scrollbar {
-    width: 0 !important; /* remove scrollbar space */
-    background: transparent; /* optional: just make scrollbar invisible */
-  }
+  position: relative;
 
+  -ms-overflow-style: none;
+
+  &::-webkit-scrollbar {
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 100%;
+    width: 10px;
+
+  }
+  &::-webkit-scrollbar-track-piece {
+    background-color: #fff; /*滚动条的背景颜色*/
+    -webkit-border-radius: 0; /*滚动条的圆角宽度*/
+  }
+  &::-webkit-scrollbar-thumb:vertical { /*垂直滚动条的样式*/
+    height: 50px;
+    background-color: #999;
+    -webkit-border-radius: 4px;
+    outline: 2px solid #fff;
+    outline-offset: -2px;
+    border: 2px solid #fff;
+  }
+  &::-webkit-scrollbar-thumb:hover { /*滚动条的hover样式*/
+    height: 50px;
+    background-color: #9f9f9f;
+    -webkit-border-radius: 4px;
+  }
 }
 
 html, body, ul, ol, dt, dd, img, p, h1, h2, h3, h4, h5, h6, input, textarea, select, fieldset, legend, ul, ol, dl, th {

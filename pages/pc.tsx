@@ -27,6 +27,7 @@ function TestPage({ pathname}) {
 }
 TestPage.getInitialProps = async function({ query }) {
     const { pathname } = query;
+    console.log(pathname)
     return {
         pageTitle: '手机扫码使用体验更佳',
         pathname,
