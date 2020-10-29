@@ -11,16 +11,42 @@
   .pageMain{
     width: 10rem;
     height: 100vh;
-    position: fixed;
-    left: 50%;
-    transform: translateX(-50%);
-    top: 0;
     box-shadow: 0 10px 20px rgba(100, 100, 100, 0.3);
     background: #FFF;
+    margin: 0 auto;
+    position: relative;
 
     .innerBox{
       width: 100%;
       height: 100%;
+    }
+
+    .qrcodeWrap{
+      position: absolute;
+      right: -280px;
+      top: 80px;
+      border-radius: 8px;
+      box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.1);
+      background-color: #FFF;
+      padding: 20px;
+
+      .qrcodeBox{
+        width: 200px;
+        height: 200px;
+        border: 1px solid #C7C7C7;
+        margin: 0 auto;
+        padding: 15px;
+        box-sizing: border-box;
+        border-radius: 5px;
+      }
+
+      .qcodeDesc {
+        margin-top: 20px;
+        font-size: 16px;
+        color: #666;
+        text-align: center;
+        line-height: 1;
+      }
     }
   }
 }
