@@ -12,7 +12,7 @@ function TestPage({ pathname}) {
                     marginWidth={0}
                     marginHeight={0}
                     scrolling="no"
-                    title="博物馆"
+                    title="nextjs learn"
                     className={style.innerBox}
                 />
                 <div className={style.qrcodeWrap}>
@@ -28,7 +28,7 @@ function TestPage({ pathname}) {
 TestPage.getInitialProps = async function({ query }) {
     const { pathname } = query;
     return {
-        pageTitle: '测试页面',
+        pageTitle: '手机扫码使用体验更佳',
         pathname,
     }
 }
