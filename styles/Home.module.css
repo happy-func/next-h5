@@ -1,12 +1,7 @@
 .text{
-  font-size: 22px;
-  color: aqua;
+  font-size: 30px;
+  line-height: 40px;
   margin: 20px 0;
+  text-align: center;
 }
 
-@media (max-width: 600px) {
-  .text {
-    font-size: 20px;
-    background-color: darkred;
-  }
-}

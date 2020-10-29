@@ -1,0 +1,59 @@
+html,
+body {
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+  Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  width: 100%;
+  height: 100%;
+}
+
+#__next {
+  overflow: -moz-scrollbars-none;
+  overflow-y: auto;
+  height: 100%;
+  width: 100%;
+  -ms-overflow-style: none;
+  &::-webkit-scrollbar {
+    width: 0 !important; /* remove scrollbar space */
+    background: transparent; /* optional: just make scrollbar invisible */
+  }
+
+}
+
+html, body, ul, ol, dt, dd, img, p, h1, h2, h3, h4, h5, h6, input, textarea, select, fieldset, legend, ul, ol, dl, th {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "微软雅黑";
+  color: #333;
+}
+
+input, img {
+  border: 0;
+  outline: none;
+}
+
+img {
+  display: block;
+}
+
+ul, ol, li {
+  list-style: none
+}
+
+html {
+  font-size: 20px;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%
+}
+
+/* rem 适配 */
+$deviceWidths:320,360,375,384,414,448,480,512,544,576,608,640;
+@each $width in $deviceWidths{
+  @media (min-width:#{$width}px){
+    html{
+      font-size:#{$width/10}px!important;
+    }
+  }
+}
