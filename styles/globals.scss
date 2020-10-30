@@ -12,8 +12,12 @@ body {
   width: 100%;
   position: relative;
 
+  // 移除ie浏览器滚动条
   -ms-overflow-style: none;
+  // 移除火狐浏览器滚动条
+  scrollbar-width: none;
 
+  // 谷歌浏览器样式定制
   &::-webkit-scrollbar {
     position: absolute;
     right: 0;
