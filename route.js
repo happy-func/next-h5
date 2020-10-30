@@ -29,5 +29,4 @@ function recursionLoadRotes(routes, withPath = '') {
     }, [])
 }
 const routeList = recursionLoadRotes(routes);
-console.log(routeList)
 module.exports = routeList;
