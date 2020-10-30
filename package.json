@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "node server.js",
+    "dev": "nodemon server.js --watch route.js",
     "build": "next build",
     "start": "cross-env NODE_ENV=production node server.js"
   },
@@ -17,6 +17,7 @@
     "@types/node": "^14.14.5",
     "@types/react": "^16.9.54",
     "cross-env": "^7.0.2",
+    "nodemon": "^2.0.6",
     "postcss-flexbugs-fixes": "^4.2.1",
     "postcss-plugin-px2rem": "^0.8.1",
     "postcss-preset-env": "^6.7.0",

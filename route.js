@@ -5,6 +5,7 @@ const routes = [
     {
         path: '/pc',
     },
+    // 以下为测试路径,可删除文件及配置
     {
         path: '/child',
         children: [
