@@ -27,6 +27,8 @@ yarn start
 ##  是否推荐
 >   不推荐此实现方式,h5页面本身的着力点应该是体验性,不再追求传统的`SEO`,以优秀的体验稳住流量,依赖微信等社交工具实现裂变传播.如果需求、业务场景比较简单，可以考虑这一实现方式，否则请使用更加专业的 [uni-app](https://uniapp.dcloud.io/) 来做`h5`业务.
 
+## 使用解析
+>   [潜行者-基于React的SSR框架NextJs实现h5兼容Pc端](https://www.deepworker.online/article/5f9d40329c55b42d6d7bc520)
 ![效果预览][wwsStr]
 
 
