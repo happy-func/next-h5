@@ -2,17 +2,21 @@ import React, { useEffect, useState } from 'react';
 import style from '@/styles/pc.module.scss';
 import Qrcode from 'qrcode.react';
 import qs from 'qs';
-import {getQueryVariable} from '@/utils/index';
+import { useRouter } from 'next/router'
+import { PROJ_TITLE } from "@/constant/index";
 
-function TestPage() {
+function PCGuid() {
     const [path, setPath] = useState('');
+    const { query } = useRouter();
+    const { url } = query;
     useEffect(() => {
-        const url = getQueryVariable('url');
-        const BaseUrl = decodeURIComponent(url).split('?')[0];
-        const paramsObj = qs.parse(decodeURIComponent(url).split('?')[1]);
-        paramsObj.v_m = 'pc';
-        setPath(BaseUrl + '?' + qs.stringify(paramsObj));
-    }, []);
+        if (url) {
+            const BaseUrl = decodeURIComponent(url as string).split('?')[0];
+            const paramsObj = qs.parse(decodeURIComponent(url as string).split('?')[1]);
+            paramsObj.v_m = 'pc';
+            setPath(BaseUrl + '?' + qs.stringify(paramsObj));
+        }
+    }, [url]);
     return (
         <div className={style.pageWrap}>
             <div className={style.pageMain}>
@@ -23,7 +27,7 @@ function TestPage() {
                         marginWidth={0}
                         marginHeight={0}
                         scrolling="no"
-                        title="nextjs learn"
+                        title={PROJ_TITLE}
                         className={style.innerBox}
                     />
                 )}
@@ -37,4 +41,4 @@ function TestPage() {
         </div>
     )
 }
-export default TestPage;
+export default PCGuid;

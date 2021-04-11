@@ -21,6 +21,7 @@
       "@/components/*": ["components/*"],
       "@/styles/*": ["styles/*"],
       "@/utils/*": ["utils/*"],
+      "@/constant/*": ["constant/*"]
     },
     "baseUrl": "."
   },
