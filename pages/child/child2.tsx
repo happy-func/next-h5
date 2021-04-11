@@ -1,3 +1,3 @@
 export default function () {
-    return <div>child2</div>
+    return <div>child2 页面</div>
 }
