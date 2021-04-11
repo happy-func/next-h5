@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import style from '@/styles/pc.module.scss';
 import Qrcode from 'qrcode.react';
 import qs from 'qs';
-import {getQueryVariable} from "../utils";
+import {getQueryVariable} from '@/utils/index';
 
 function TestPage() {
     const [path, setPath] = useState('');
