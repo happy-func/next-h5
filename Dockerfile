@@ -2,7 +2,7 @@ FROM node:14.15.1
 
 WORKDIR /app
 # 这步必须比复制文件前，如果package.json一样就不会重新安装项目依赖了
-COPY package.json yarn.lock .npmrc /app/
+COPY package.json yarn.lock /app/
 # 安装项目依赖
 RUN npm install npm -g \
  && yarn install \
