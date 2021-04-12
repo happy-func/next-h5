@@ -12,8 +12,6 @@ function Home({ list }) {
             <BaseLink src="/test?id=2">test</BaseLink>
             <Swiper
               spaceBetween={50}
-              onSlideChange={() => console.log('slide change')}
-              onSwiper={(swiper) => console.log(swiper)}
               centeredSlides={true}
               loop
               autoplay={{
