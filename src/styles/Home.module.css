@@ -10,3 +10,10 @@
   width: 750px;
 }
 
+.form{
+  width: 750px;
+}
+.formItem{
+  width: 700px;
+  margin: 25px 25px!important;
+}
