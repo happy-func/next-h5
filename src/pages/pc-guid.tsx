@@ -3,7 +3,7 @@ import style from '@/styles/pc.module.scss';
 import Qrcode from 'qrcode.react';
 import qs from 'qs';
 import { useRouter } from 'next/router'
-import { PROJ_TITLE } from "@/constant/index";
+import { PROJ_TITLE } from "@/constant";
 
 function PCGuid() {
     const [path, setPath] = useState('');

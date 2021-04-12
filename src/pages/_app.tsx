@@ -1,6 +1,6 @@
 import Head from "next/head";
 import '@/styles/globals.scss';
-import {PROJ_TITLE} from "@/constant/index";
+import {PROJ_TITLE} from "@/constant";
 
 function MyApp({Component, pageProps}) {
   return <>
