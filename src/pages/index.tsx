@@ -25,6 +25,7 @@ function Home({list}) {
           delay: 2500,
           disableOnInteraction: false,
         }}
+        className={style.swiper}
       >
         <SwiperSlide>Slide 1</SwiperSlide>
         <SwiperSlide>Slide 2</SwiperSlide>

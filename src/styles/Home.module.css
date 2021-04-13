@@ -17,3 +17,9 @@
   width: 700px;
   margin: 25px 25px!important;
 }
+.swiper{
+  height: 540px;
+  background-color: antiquewhite;
+  text-align: center;
+  line-height: 540px;
+}
