@@ -33,4 +33,4 @@ yarn start
 ## 使用解析
 >   [潜行者-基于React的SSR框架NextJs实现h5兼容Pc端](https://www.deepworker.online/article/5f9d40329c55b42d6d7bc520)
 
-![效果预览][https://raw.githubusercontent.com/happy-func/next-h5/main/public/preview.png]
+![效果预览](https://raw.githubusercontent.com/happy-func/next-h5/main/public/preview.png)
