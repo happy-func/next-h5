@@ -9,6 +9,7 @@
   },
   "dependencies": {
     "@material-ui/core": "^4.11.3",
+    "antd-mobile": "^2.3.4",
     "next": "9.5.5",
     "qrcode.react": "^1.0.0",
     "react": "17.0.1",

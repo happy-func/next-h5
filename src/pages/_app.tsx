@@ -6,6 +6,8 @@ import CssBaseline from '@material-ui/core/CssBaseline';
 import theme from '@/theme';
 import {PROJ_TITLE} from "@/constant";
 
+const { NEXT_PUBLIC_ENV_BASE_PATH } = process.env;
+
 function MyApp({Component, pageProps}) {
   useEffect(() => {
     // Remove the server-side injected CSS.
@@ -18,6 +20,21 @@ function MyApp({Component, pageProps}) {
     <Head>
       <meta name="viewport"
             content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+      <script src={`${NEXT_PUBLIC_ENV_BASE_PATH}/lib/fastclick.js`}></script>
+      <script
+        dangerouslySetInnerHTML={{
+          __html: `
+            if ('addEventListener' in document) {
+              document.addEventListener('DOMContentLoaded', function() {
+                FastClick.attach(document.body);
+              }, false);
+            }
+            if(!window.Promise) {
+              document.writeln('<script src="${NEXT_PUBLIC_ENV_BASE_PATH}/lib/es6-promise.min.js"'+'>'+'<'+'/'+'script>');
+            }
+          `,
+        }}
+      />
       <link rel="icon" href="/favicon.ico"/>
       <title>{pageProps.pageTitle || PROJ_TITLE}</title>
       <script dangerouslySetInnerHTML={{
@@ -42,7 +59,7 @@ function MyApp({Component, pageProps}) {
               return(false);
             }
             if (IsPC() && getQueryVariable('v_m') !== 'pc') {
-              window.location.href = window.location.origin + "/pc-guid?v_m=pc&url=" + encodeURIComponent(window.location.href);
+              window.location.href = window.location.origin + "${NEXT_PUBLIC_ENV_BASE_PATH}/pc-guid?v_m=pc&url=" + encodeURIComponent(window.location.href);
             }
             if (IsPC() && getQueryVariable('v_m') === 'pc' && !getQueryVariable('url')) {
               window.addEventListener('load', function(){

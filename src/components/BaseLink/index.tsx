@@ -23,7 +23,7 @@ const genSrc = function (src: string): string {
 
 // 路由跳转基础组件
 const BaseLink: React.FC<Props> = function ({ src, children }) {
-  return <Link href={genSrc(src)}>
+  return <Link href={genSrc(src)} passHref>
     <a>{children}</a>
   </Link>
 }
