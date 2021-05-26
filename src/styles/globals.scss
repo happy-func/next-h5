@@ -75,12 +75,4 @@ html {
   -webkit-text-size-adjust: 100%
 }
 
-/* rem 适配 */
-$deviceWidths:320,360,375,384,414,448,480,512,544,576,608,640;
-@each $width in $deviceWidths{
-  @media (min-width:#{$width}px){
-    html{
-      font-size:#{$width/10}px!important;
-    }
-  }
-}
+

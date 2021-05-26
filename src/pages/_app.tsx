@@ -1,7 +1,6 @@
 import React, { useEffect } from "react";
 import Head from "next/head";
 import '@/styles/globals.scss';
-import theme from '@/theme';
 import {PROJ_TITLE} from "@/constant";
 import 'antd-mobile/dist/antd-mobile.css';
 
@@ -69,6 +68,21 @@ function MyApp({Component, pageProps}) {
         `
       }}/>
     </Head>
+    <script
+      dangerouslySetInnerHTML={{
+        __html: `
+               window.onresize = function () {
+                  getRem(750, 75);
+                };
+                function getRem(pwidth, prem) {//封装
+                    var html = document.getElementsByTagName("html")[0];
+                    var oWidth = document.body.clientWidth || document.documentElement.clientWidth;
+                    html.style.fontSize = oWidth / pwidth * prem + "px";
+                }
+                getRem(750, 75);
+            `,
+      }}
+    />
     <Component {...pageProps} />
   </>
 }
