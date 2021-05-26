@@ -1,21 +1,53 @@
-import React from "react";
+import React, {useState} from "react";
 import style from '../styles/Home.module.css';
 import BaseLink from "@/components/BaseLink";
 import SwiperCore, {Autoplay} from 'swiper';
 import {Swiper, SwiperSlide} from 'swiper/react';
 import 'swiper/swiper.min.css';
-import {Button, ButtonGroup} from "@material-ui/core";
+import {Button, List, Picker} from 'antd-mobile';
 
 SwiperCore.use([Autoplay]);
 
 function Home({list}) {
+  const seasons = [
+    [
+      {
+        label: '2013',
+        value: '2013',
+      },
+      {
+        label: '2014',
+        value: '2014',
+      },
+    ],
+    [
+      {
+        label: '春',
+        value: '春',
+      },
+      {
+        label: '夏',
+        value: '夏',
+      },
+    ],
+  ];
+  const [sValue] = useState([]);
   return (
     <div className={style.page}>
-      <ButtonGroup variant="contained" color="primary" aria-label="contained primary button group">
-        <Button>One</Button>
-        <Button>Two</Button>
-        <Button>Three</Button>
-      </ButtonGroup>
+      <Button>One</Button>
+      <Button>Two</Button>
+      <Button>Three</Button>
+      <Picker
+        data={seasons}
+        title="选择季节"
+        cascade={false}
+        extra="请选择(可选)"
+        value={sValue}
+        onChange={v => console.log(v)}
+        onOk={v => console.log(v)}
+      >
+        <List.Item arrow="horizontal">Multiple</List.Item>
+      </Picker>
       <BaseLink src="/test?id=2">test</BaseLink>
       <Swiper
         spaceBetween={50}

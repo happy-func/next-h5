@@ -1,10 +1,9 @@
 import React, { useEffect } from "react";
 import Head from "next/head";
 import '@/styles/globals.scss';
-import { ThemeProvider } from '@material-ui/core/styles';
-import CssBaseline from '@material-ui/core/CssBaseline';
 import theme from '@/theme';
 import {PROJ_TITLE} from "@/constant";
+import 'antd-mobile/dist/antd-mobile.css';
 
 const { NEXT_PUBLIC_ENV_BASE_PATH } = process.env;
 
@@ -70,11 +69,7 @@ function MyApp({Component, pageProps}) {
         `
       }}/>
     </Head>
-    <ThemeProvider theme={theme}>
-      {/* CssBaseline kickstart an elegant, consistent, and simple baseline to build upon. */}
-      <CssBaseline />
-      <Component {...pageProps} />
-    </ThemeProvider>
+    <Component {...pageProps} />
   </>
 }
 
