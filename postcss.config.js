@@ -15,7 +15,7 @@ module.exports = {
             unitPrecision: 5,
             mediaQuery: false,
             minPixelValue: 3,
-            selectorBlackList: ['html'],
+            selectorBlackList: ['.m-style-', 'html', '.pageMain', '.qrcodeWrap'],
         },
     },
 }
