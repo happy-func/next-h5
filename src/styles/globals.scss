@@ -9,6 +9,7 @@ body {
 #__next {
   width: 100%;
   position: relative;
+  box-sizing: border-box;
   &.pc-mode{
     height: 100vh;
     overflow-y: auto;
@@ -24,7 +25,7 @@ body {
     right: 0;
     top: 0;
     height: 100%;
-    width: 0;
+    width: 7px;
 
   }
   &::-webkit-scrollbar-track-piece {

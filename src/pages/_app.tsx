@@ -2,7 +2,6 @@ import React, { useEffect } from "react";
 import Head from "next/head";
 import '@/styles/globals.scss';
 import {PROJ_TITLE} from "@/constant";
-import 'antd-mobile/dist/antd-mobile.css';
 
 const { NEXT_PUBLIC_ENV_BASE_PATH } = process.env;
 
@@ -34,6 +33,7 @@ function MyApp({Component, pageProps}) {
         }}
       />
       <link rel="icon" href="/favicon.ico"/>
+      <link href="https://cdn.bootcdn.net/ajax/libs/antd-mobile/2.3.4/antd-mobile.min.css" rel="stylesheet" />
       <title>{pageProps.pageTitle || PROJ_TITLE}</title>
       <script dangerouslySetInnerHTML={{
         __html: `
