@@ -29,6 +29,6 @@ yarn start
 >> 好吧，我收回我之前的话。使用NextJs并不单单是为了SEO，甚至这只是其中最微不足道的一部分，而我们真正在意的问题是，加载速度。NextJs可以避免单页面应用程序的白屏效应，做成真正的静态的多页面应用程序。而React成为了我们模块化开发的最佳工具。这样，我们便同时收获了速度和模块化两种体验。这是uni-app在项目变得越来越庞大的时候所无法比拟的。
 
 ## 使用解析
->   [潜行者-基于React的SSR框架NextJs实现h5兼容Pc端](https://www.deepworker.online/article/5f9d40329c55b42d6d7bc520)
+>   [潜行者-基于React的SSR框架NextJs实现h5兼容Pc端](https://www.deepworker.online/article?id=24)
 
 ![效果预览](https://raw.githubusercontent.com/happy-func/next-h5/main/public/preview.png)
