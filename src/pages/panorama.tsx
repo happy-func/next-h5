@@ -101,7 +101,7 @@ function PanoramicMap() {
 }
 PanoramicMap.getInitialProps = function() {
   return {
-    pageTitle: '全景地图',
+    pageTitle: '全景漫游',
   };
 };
 export default PanoramicMap;
