@@ -2,6 +2,9 @@ import React, { useEffect } from "react";
 import { useRouter } from 'next/router';
 import Head from "next/head";
 
+/*
+* head 头部单独注入依赖示范
+* */
 export default function TestPage(){
     const { query } = useRouter();
     const { id } = query;
