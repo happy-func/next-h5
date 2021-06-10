@@ -14,7 +14,8 @@
     "qrcode.react": "^1.0.0",
     "react": "17.0.1",
     "react-dom": "17.0.1",
-    "swiper": "^6.5.6"
+    "swiper": "^6.5.6",
+    "three": "^0.129.0"
   },
   "devDependencies": {
     "@types/node": "^14.14.5",
