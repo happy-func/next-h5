@@ -99,9 +99,12 @@ function PanoramicMap() {
     </div>
   );
 }
-PanoramicMap.getInitialProps = function() {
+export function getStaticProps() {
   return {
-    pageTitle: '全景漫游',
-  };
-};
+    props: {
+      pageTitle: '全景漫游',
+    }
+  }
+}
+
 export default PanoramicMap;

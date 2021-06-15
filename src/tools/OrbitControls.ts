@@ -542,11 +542,11 @@ var OrbitControls = function ( object, domElement ) {
 
   }
 
-  function handleMouseUp( /*event*/ ) {
-
-    // no-op
-
-  }
+  // function handleMouseUp( /*event*/ ) {
+  //
+  //   // no-op
+  //
+  // }
 
   function handleMouseWheel( event ) {
 
@@ -748,11 +748,11 @@ var OrbitControls = function ( object, domElement ) {
 
   }
 
-  function handleTouchEnd( /*event*/ ) {
-
-    // no-op
-
-  }
+  // function handleTouchEnd( /*event*/ ) {
+  //
+  //   // no-op
+  //
+  // }
 
   //
   // event handlers - FSM: listen for events and reset state
@@ -908,7 +908,7 @@ var OrbitControls = function ( object, domElement ) {
 
     if ( scope.enabled === false ) return;
 
-    handleMouseUp( event );
+    // handleMouseUp( event );
 
     document.removeEventListener( 'mousemove', onMouseMove, false );
     document.removeEventListener( 'mouseup', onMouseUp, false );
@@ -1089,7 +1089,7 @@ var OrbitControls = function ( object, domElement ) {
 
     if ( scope.enabled === false ) return;
 
-    handleTouchEnd( event );
+    // handleTouchEnd( event );
 
     scope.dispatchEvent( endEvent );
 
