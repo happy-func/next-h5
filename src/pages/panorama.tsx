@@ -12,27 +12,27 @@ function PanoramicMap() {
   const sides = [
     {
       // 右
-      url: `http://qiniu2.99tongxuelu.com/2b5ff253-b82c-6eac-51ce-62753778cd60-178634cd53d.jpg`,
+      url: `${process.env.NEXT_PUBLIC_ENV_BASE_PATH}/panorama/right.jpeg`,
     },
     {
       // 左
-      url: `http://qiniu2.99tongxuelu.com/dc63a39e-f523-fef2-e477-9a2a3c00c0d5-178634cd53d.jpg`,
+      url: `${process.env.NEXT_PUBLIC_ENV_BASE_PATH}/panorama/left.jpeg`,
     },
     {
       // 上
-      url: `http://qiniu2.99tongxuelu.com/99cc9d02-42da-1b1e-01c2-90c5f07e9284-178634cd53d.jpg`,
+      url: `${process.env.NEXT_PUBLIC_ENV_BASE_PATH}/panorama/up.jpeg`,
     },
     {
       // 下
-      url: `http://qiniu2.99tongxuelu.com/170107d7-40d6-7d7a-f300-3784e79d733c-178634cd53d.jpg`,
+      url: `${process.env.NEXT_PUBLIC_ENV_BASE_PATH}/panorama/foot.jpeg`,
     },
     {
       // 前
-      url: `http://qiniu2.99tongxuelu.com/3510d36e-fb8d-d47e-8086-f577164d8b1c-178634cd53d.jpg`,
+      url: `${process.env.NEXT_PUBLIC_ENV_BASE_PATH}/panorama/front.jpeg`,
     },
     {
       // 后
-      url: `http://qiniu2.99tongxuelu.com/b57c272f-519e-139b-672d-9dde2cd74f08-178634cd53b.jpg`,
+      url: `${process.env.NEXT_PUBLIC_ENV_BASE_PATH}/panorama/back.jpeg`,
     },
   ];
   function onWindowResize() {
