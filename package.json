@@ -15,7 +15,8 @@
     "react": "17.0.1",
     "react-dom": "17.0.1",
     "swiper": "^6.5.6",
-    "three": "^0.129.0"
+    "three": "^0.129.0",
+    "video.js": "^7.12.3"
   },
   "devDependencies": {
     "@types/node": "^14.14.5",
