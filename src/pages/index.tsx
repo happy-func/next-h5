@@ -53,6 +53,7 @@ function Home({list}) {
       <Swiper
         centeredSlides
         loop
+        autoplay
         spaceBetween={30}
         slidesPerView={3}
         className={style.swiper}
