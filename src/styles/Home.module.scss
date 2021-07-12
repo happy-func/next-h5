@@ -26,6 +26,14 @@
     background-color: #C7C7C7;
     transition: 400ms;
     transform: scale(0.8);
+
+    &Prev{
+      transform: translateX(.55rem) scale(.8);
+    }
+
+    &Next{
+      transform: translateX(-.55rem) scale(.8);
+    }
     &Active{
       transform: scale(1);
     }

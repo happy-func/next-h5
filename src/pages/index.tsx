@@ -1,4 +1,4 @@
-import React, {useState} from "react";
+import React, { useEffect, useState } from "react";
 import style from '../styles/Home.module.scss';
 import BaseLink from "@/components/BaseLink";
 import SwiperCore, {Autoplay} from 'swiper';
@@ -32,6 +32,7 @@ function Home({list}) {
     ],
   ];
   const [sValue] = useState([]);
+
   return (
     <div className={style.page}>
       <List.Item>常用轮播</List.Item>
@@ -54,14 +55,13 @@ function Home({list}) {
         centeredSlides
         loop
         autoplay
-        spaceBetween={30}
-        slidesPerView={3}
+        slidesPerView={1.23}
         className={style.swiper}
       >
         {[1,2,3,4].map((item) => (
-          <SwiperSlide key={item}>
-            {({ isActive }) => (
-              <div className={`${style.swiperItem} ${isActive ? style.swiperItemActive : ''}`}>Slide {item}</div>
+          <SwiperSlide key={item} className={``}>
+            {({ isActive, isPrev, isNext }) => (
+              <div className={`${style.swiperItem} ${isActive ? style.swiperItemActive : ''} ${isPrev ? style.swiperItemPrev : ''} ${isNext ? style.swiperItemNext : ''}`}>Slide {item}</div>
             )}
           </SwiperSlide>
         ))}
