@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import style from '../styles/Home.module.scss';
 import BaseLink from "@/components/BaseLink";
 import SwiperCore, {Autoplay} from 'swiper';
