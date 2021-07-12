@@ -22,4 +22,12 @@
   background-color: antiquewhite;
   text-align: center;
   line-height: 540px;
+  &Item{
+    background-color: #C7C7C7;
+    transition: 400ms;
+    transform: scale(0.8);
+    &Active{
+      transform: scale(1);
+    }
+  }
 }

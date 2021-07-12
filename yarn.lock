@@ -3524,10 +3524,10 @@ supports-color@^8.0.0:
   dependencies:
     has-flag "^4.0.0"
 
-swiper@^6.5.6:
-  version "6.5.6"
-  resolved "https://registry.npm.taobao.org/swiper/download/swiper-6.5.6.tgz?cache=0&sync_timestamp=1617959238136&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Fswiper%2Fdownload%2Fswiper-6.5.6.tgz#4d1dc5cd124696dd765818f2484a1ec8e0d3d3bc"
-  integrity sha1-TR3FzRJGlt12WBjySEoeyODT07w=
+swiper@6.7.5:
+  version "6.7.5"
+  resolved "https://registry.npmjs.org/swiper/-/swiper-6.7.5.tgz#8f150c7281919b7d6bea00889e9dc16448e92986"
+  integrity sha512-KaTjO93tZyMpxWHaey+T+H/JeePMZV/joZWhZaor76Xk+rPGmjOz1S8mXSyrRkaW0p0LOJYeWGB8d0gYxSSV/Q==
   dependencies:
     dom7 "^3.0.0"
     ssr-window "^3.0.0"
